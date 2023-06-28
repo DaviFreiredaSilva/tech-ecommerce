@@ -1,0 +1,29 @@
+a{
+    color: white!important;
+    text-decoration: none!important;
+}
+
+#float-menu-div {
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    animation-name: enter-left;
+    animation-duration: 1s;
+}
+
+@keyframes enter-left {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

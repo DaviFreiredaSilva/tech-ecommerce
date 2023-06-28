@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css'
+import { CommerceContextProvider } from './context/CommerceContext'
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <CommerceContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </CommerceContextProvider>
   </React.StrictMode>
 );
 
